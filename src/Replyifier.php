@@ -10,7 +10,7 @@ class Replyifier
      *
      * @return string
      */
-    public static function replyify($subject, $isReCountRequired = false)
+    public static function replyify(string $subject, bool $isReCountRequired = false): string
     {
         $subjects = explode(':', $subject);
         $reCount = 1;
